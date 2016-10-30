@@ -1,11 +1,5 @@
-/*
-ozc -c ZigZag.oz -o ZigZag.oza
-ozengine ZigZag.oza
-*/
-functor
-	import
-		System	
-	define
+%%terminal oz
+declare
 	  %%            state          move   success     failure
 	  States = unit(right:        [ 1# 0  downLeft    downInstead]
 					downInstead:  [ 0# 1  downLeft    terminate]
@@ -42,6 +36,5 @@ functor
 		 {Record.forAll T fun {$} {MakeTuple unit W} end}
 		 T
 	  end
-	in
-	  {System.show {CreateZigZag 5}}
-end
+          in
+	  {Browse {CreateZigZag 5}}

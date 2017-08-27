@@ -1,4 +1,3 @@
-# Oz
 
 Tecnológico de Costa Rica
 
